@@ -30,6 +30,7 @@ async function run() {
 
     const database = client.db("hireloop_db");
     const jobCollection = database.collection("jobs");
+    const companyCollection = database.collection("companies");
 
     //read the jobs api
     app.get("/api/jobs", async (req, res) => {
